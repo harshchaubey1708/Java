@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<title>Contact Information Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f3f3f3;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+
+.container {
+background: #fff;
+padding: 30px;
+width: 400px;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+border-radius: 10px;
+}
+
+
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+label {
+font-size: 14px;
+font-weight: bold;
+}
+
+
+input {
+width: 100%;
+padding: 10px;
+margin: 8px 0 15px 0;
+border: 1px solid #888;
+border-radius: 5px;
+font-size: 14px;
+}
+
+
+button {
+width: 100%;
+padding: 12px;
+background: #0077ff;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+button:hover {
+background: #005fcc;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Contact Information</h2>
+<form>
+
+
+<label>Username (Alphabets Only)</label>
+<input type="text" name="username" pattern="[A-Za-z]+" required />
+
+
+<label>Email</label>
+<input type="email" name="email" required />
+
+
+<label>Phone Number (10 Digits)</label>
+<input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required />
+
+
+<button type="register">Register</button>
+</form>
+</div>
+</body>
+</html>
